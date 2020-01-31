@@ -4,9 +4,11 @@ from classes.magic import *
 from classes.inventory import Item
 
 print("\n\n")
-print("NAME     HP                                    MP")
-print("                  _________________________           __________")
-print("Valos:   460/460 |█████████████████████████|   65/65 |██████████|")
+print("NAME           HP                               MP")
+print("               ________________________         __________")
+print(bcolors.BOLD + "Valos:"+
+      "460/460 |"+bcolors.OKGREEN + "████████████████████████" + bcolors.ENDC + bcolors.BOLD+ "| "+
+      "65/65 |"+bcolors.OKBLUE + "██████████"+bcolors.ENDC+"|")
 
 #Create Black Magic
 fire = Spell("Fire",10, 100, "black")
